@@ -1,4 +1,4 @@
-# Underwater scuba diver tracking using RL controllers
+# DynAUV: Dynamic Underwater Target Tracking in Robotic Systems
 Implementation of paper: A comparison of RL-based and PID controllers for 6-DOF swimming robots: hybrid underwater object tracking
 
 In this work, we present an exploration and assessment of employing a centralized deep Q-network (DQN) controller as a substitute for the prevalent use of PID controllers in the context of 6DOF swimming robots. Our primary focus centers on illustrating this transition with the specific case of underwater object tracking. DQN offers advantages such as data efficiency and off-policy learning, while remaining simpler to implement than other reinforcement learning methods. Given the absence of a dynamic model for our robot, we propose an RL agent to control this multi-input-multi-output (MIMO) system, where a centralized controller may offer more robust control than distinct PIDs. Our approach involves initially using classical controllers for safe exploration, then gradually shifting to DQN to take full control of the robot.
